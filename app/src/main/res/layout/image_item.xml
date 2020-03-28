@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.joshtalks.joshtalksassignment.userInterface.ImageDataModel" />
+        <variable
+            name="listener"
+            type="com.joshtalks.joshtalksassignment.utils.BaseAdapter.Listener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp">
+
+        <ImageView
+            android:id="@+id/iconFood"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_64sdp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{model.previewURL}"/>
+
+    </RelativeLayout>
+</layout>
